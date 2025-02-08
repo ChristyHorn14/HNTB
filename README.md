@@ -18,6 +18,40 @@ over.**
 # Download the code from this repository
 - Save to your desired location on your computer
 
+# Set up your folders
+- Create a head and neck tumor board folder on your local computer
+- Create a folder within the HNTB folder titled Outputs
+- Unzip this repository and place the folder HNTB-main within the first folder your created (not in outputs)
+
+# Create your config files
+- Go to HNTB-main > config and open chris.yaml
+```
+
+# Input files
+active_tumor_board_file: '/Users/chrishornung/Desktop/HNTB-Reboot/Active Tumor Board LINKED.xlsx'
+
+# Output files
+output_directory: '/Users/chrishornung/Desktop/HNTB-Reboot/Outputs'
+ppt_filename: 'HNTB_PPT.pptx'
+facesheets_filename: 'docs_facesheets.docx'
+prelim_emails_prefix: 'PrelimEmails_'
+
+# Template files
+template_directory: './Templates'
+header_image_filename: 'EVMSLogo.png'
+facesheet_template_filename: 'FacesheetTemplate.docx'
+ppt_template_filename: 'PPT_template.pptx'
+```
+
+- Replace '/Users/chrishornung/Desktop/HNTB-Reboot/Active Tumor Board LINKED.xlsx' with your own file path to the first HNTB folder you created ex '/Users/JohnDoe/Desktop/HNTB-Reboot/Active Tumor Board LINKED.xlsx'
+- Make sure the path name is enclosed by ' '
+
+# Download the Tumor board xlsx file
+- You will ultimately use all of this code after you have edited the Active Tumor Board LINKED.xlsx document throughout the week, for the code to work, it needs this file
+- Go to OneDrive then select File > Create a Copy > Download a Copy
+- Once the file downloads, drag it into your original HNTB folder. Ensure that the name is Active Tumor Board LINKED.xlsx
+
+
 # Set your directory
 - Open Terminal then set your working directory with the below code where YourUserName and Location are where you saved the download for this repository
 ```
@@ -25,7 +59,7 @@ over.**
 ```
 ex. /Users/chrishornung/Desktop/HNTB-main
 
-# Build environement 
+# Build environment 
 - Run `build.sh` from terminal (the build.sh file has everything that is required to rebuild the environment or add new modules to the environment):
 ```
 source build.sh
@@ -45,21 +79,33 @@ deactivate
 The following examples use the config yaml file
 `./tests/artifacts/test_config.yaml`. This will pull dummy data from
 `./tests/artifacts/hntb_dummy.xlsx` and save output to
-`./tests/artifacts/Outputs/`. To use real data you will need to create a config
+`./tests/artifacts/Outputs/`. To use real data you will need to use your config
 to pull data from the HNTB OneDrive. See `./config/courtney.yaml` or
 `./config/courtney.yaml` for examples.
 
 ## Generate Run Face Sheets
 - Activate the virtual environment (venv) as above, then run:
+Test
 ```
 python hntb_gen.py --config ./tests/artifacts/test_config.yaml --generate facesheets
 ```
+Real
+```
+python hntb_gen.py --config ./config/YourConfig.yaml --generate facesheets
+```
+
+
 
 ## Generate PPT
 - Activate the virtual environment (venv), then run:
+Test
 ```
 python hntb_gen.py --config ./tests/artifacts/test_config.yaml --generate ppt
 ```
+Real
+```
+python hntb_gen.py --config ./config/YourConfig.yaml --generate ppt
+````
 
 # VSCode helpful actions:
 - `command + /`: will turn code into comments
