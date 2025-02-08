@@ -1,0 +1,15 @@
+
+# Input files
+active_tumor_board_file: 'Active Tumor Board LINKED.xlsx'
+
+# Output files
+output_directory: '/Users/chrishornung/Desktop/HNTB Reboot/Outputs'
+ppt_filename: 'HNTB_PPT.pptx'
+facesheets_filename: 'docs_facesheets.docx'
+prelim_emails_prefix: 'PrelimEmails_'
+
+# Template files
+template_directory: '/Users/chrishornung/Desktop/HNTB Reboot/Templates'
+header_image_filename: 'EVMSLogo.png'
+facesheet_template_filename: 'FacesheetTemplate.docx'
+ppt_template_filename: 'PPT_template.pptx'

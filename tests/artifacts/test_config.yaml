@@ -1,0 +1,15 @@
+
+# Input files
+active_tumor_board_file: './tests/artifacts/hntb_dummy.xlsx'
+
+# Output files
+output_directory: './tests/artifacts/Outputs'
+ppt_filename: 'HNTB_PPT.pptx'
+facesheets_filename: 'docs_facesheets.docx'
+prelim_emails_prefix: 'PrelimEmails_'
+
+# Template files
+template_directory: './Templates'
+header_image_filename: 'EVMSLogo.png'
+facesheet_template_filename: 'FacesheetTemplate.docx'
+ppt_template_filename: 'PPT_template.pptx'
