@@ -15,18 +15,29 @@ uses a single config file and is meant to replace the original six scripts.
 **However, currently only `docs_FaceSheet.py` and `PPT.py` have been ported
 over.**
 
-# To Activate Environment
+# Download the code from this repository
+- Save to your desired location on your computer
+
+# Set your directory
+- Open Terminal then set your working directory with the below code where YourUserName and Location are where you saved the download for this repository
+```
+  cd /Users/YourUserName/Location/HNTB-main
+```
+ex. /Users/chrishornung/Desktop/HNTB-main
+
+# Build environement 
 - Run `build.sh` from terminal (the build.sh file has everything that is required to rebuild the environment or add new modules to the environment):
 ```
-$ source build.sh
+source build.sh
 ```
-- A faster way to activate the environment is to use this script (once everything has been installed):
+Activate Environment
+- Once everything has been installed, used the script below
 ```
-$ source ./venv/bin/activate
+source ./venv/bin/activate
 ```
 - Deactivate environment by running:
 ```
-(venv) $ deactivate
+deactivate
 ```
 
 # Examples
@@ -39,15 +50,15 @@ to pull data from the HNTB OneDrive. See `./config/courtney.yaml` or
 `./config/courtney.yaml` for examples.
 
 ## Generate Run Face Sheets
-- Activate the virtual environment (venv), then run:
+- Activate the virtual environment (venv) as above, then run:
 ```
-(venv) $ python hntb_gen.py --config ./tests/artifacts/test_config.yaml --generate facesheets
+python hntb_gen.py --config ./tests/artifacts/test_config.yaml --generate facesheets
 ```
 
 ## Generate PPT
 - Activate the virtual environment (venv), then run:
 ```
-(venv) $ python hntb_gen.py --config ./tests/artifacts/test_config.yaml --generate ppt
+python hntb_gen.py --config ./tests/artifacts/test_config.yaml --generate ppt
 ```
 
 # VSCode helpful actions:
