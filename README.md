@@ -43,8 +43,9 @@ facesheet_template_filename: 'FacesheetTemplate.docx'
 ppt_template_filename: 'PPT_template.pptx'
 ```
 
-- Replace '/Users/chrishornung/Desktop/HNTB-Reboot/Active Tumor Board LINKED.xlsx' with your own file path to the first HNTB folder you created ex '/Users/JohnDoe/Desktop/HNTB-Reboot/Active Tumor Board LINKED.xlsx'
+- For #Input files, replace '/Users/chrishornung/Desktop/HNTB-Reboot/Active Tumor Board LINKED.xlsx' with your own file path to the first HNTB folder you created ex '/Users/JohnDoe/Desktop/YourFolderName/Active Tumor Board LINKED.xlsx'
 - Make sure the path name is enclosed by ' '
+- For #Output files change the path name to your username and HNTB folder ex '/Users/JohnDoe/Desktop/YourFolderName/Outputs'
 
 # Download the Tumor board xlsx file
 - You will ultimately use all of this code after you have edited the Active Tumor Board LINKED.xlsx document throughout the week, for the code to work, it needs this file
@@ -93,7 +94,7 @@ Real
 ```
 python hntb_gen.py --config ./config/YourConfig.yaml --generate facesheets
 ```
-
+- This file with save to the Outputs folder in your HNTB folder
 
 
 ## Generate PPT
@@ -106,6 +107,7 @@ Real
 ```
 python hntb_gen.py --config ./config/YourConfig.yaml --generate ppt
 ````
+- This file with save to the Outputs folder in your HNTB folder
 
 # VSCode helpful actions:
 - `command + /`: will turn code into comments
