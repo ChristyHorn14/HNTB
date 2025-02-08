@@ -16,6 +16,12 @@ uses a single config file and is meant to replace the original six scripts.
 **However, currently only `docs_FaceSheet.py` and `PPT.py` have been ported
 over.**
 
+## [Download Anaconda](https://www.anaconda.com/download)
+- Go to the Apple Icon at the top left of your screen and select About this Mac
+- Determine if you have an Apple chip or an Intel chip
+- Select the appropriate graphical installer from the Anaconda website
+- Follow the installer instructions to complete installation
+
 ## Download the code from this repository
 - Save to your desired location on your computer
 
