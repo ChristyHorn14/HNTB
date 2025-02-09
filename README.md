@@ -53,8 +53,11 @@ ppt_template_filename: 'PPT_template.pptx'
 - For #Input files, replace '/Users/chrishornung/Desktop/HNTB-Reboot/Active Tumor Board LINKED.xlsx' with your own file path to the first HNTB folder you created ex '/Users/JohnDoe/Desktop/YourFolderName/Active Tumor Board LINKED.xlsx'
 - Make sure the path name is enclosed by ' '
 - For #Output files change the path name to your username and HNTB folder ex '/Users/JohnDoe/Desktop/YourFolderName/Outputs'
+-   The easiest way to find the path name is to copy paste from the bottom aspect of the Finder window. If it does not show up. Select View (at the top of your screen) > Show Path Bar. Once the path is visible at the bottom of the Finder window, you can copy and paste it into the .yaml file
 - Save the file as YourName.yaml
-- If it is not letting you save as a .yaml file you have two options. 1. Don't create a new text file, simply edit the file chris.yaml and save it. 2) Click on the open text file then select Text edit at the top of your screen then select Settings and change the format to plain text. You will need to close the text editor and then repeat the process of copying and pasting the chris.yaml file into a new texteditor file and saving. When you save, make sure that you uncheck the button that says "if no extension given, save at .txt"
+- TROUBLESHOOTING - If it is not letting you save as a .yaml file you have two options.
+-   1. Don't create a new text file, simply edit the file chris.yaml and save it. You can then rename the file or leave it as is, just make sure that the code to run the scripts below has the accurate config file name
+    2. Click on the open text file then select Text edit at the top of your screen then select Settings and change the format to plain text. You will need to close the text editor and then repeat the process of copying and pasting the chris.yaml file into a new texteditor file and saving as your name .yaml. When you save, make sure that you uncheck the button that says "if no extension given, save at .txt"
 
 ## Download the Tumor board xlsx file
 - You will ultimately use all of this code after you have edited the Active Tumor Board LINKED.xlsx document throughout the week, for the code to work, it needs this file
