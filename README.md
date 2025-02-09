@@ -17,10 +17,11 @@ uses a single config file and is meant to replace the original six scripts.
 over.**
 
 ## [Download Anaconda](https://www.anaconda.com/download)
+- This is an easy way to make sure you have the correct version of python installed on your device
 - Go to the Apple Icon at the top left of your screen and select About this Mac
 - Determine if you have an Apple chip or an Intel chip
 - Select the appropriate graphical installer from the Anaconda website
-- Follow the installer instructions to complete installation
+- Follow the installer instructions to complete the installation
 
 ## Download the code from this repository
 - Save to your desired location on your computer
