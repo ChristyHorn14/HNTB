@@ -32,7 +32,9 @@ def check_path(path: Path, name: str):
 
 
 def check_config(cfg: HNTBConfig):
-    if not str(cfg.active_tumor_board_file) == "tests/artifacts/hntb_dummy.xlsx":  # Don't perform checks on dummy xlsx file.
+    if (
+        not str(cfg.active_tumor_board_file) == "tests/artifacts/hntb_dummy.xlsx"
+    ):  # Don't perform checks on dummy xlsx file.
         check_path(cfg.active_tumor_board_file, "active_tumor_board_file")
         check_path(cfg.output_directory, "output_directory")
 

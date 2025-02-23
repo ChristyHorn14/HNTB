@@ -5,6 +5,7 @@ import glog
 from hntb.config_options import read_config
 from hntb.facesheets import generate_facesheets
 from hntb.ppt import generate_ppt
+from hntb.prelim_emails import generate_prelim_emails
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser(description="Head and neck tumor board file generator.")
@@ -35,6 +36,9 @@ if __name__ == "__main__":
     elif args.generate == "ppt":
         glog.info("Generating powerpoint.")
         generate_ppt(cfg)
+    elif args.generate == "emails":
+        glog.info("Generating prelim emails.")
+        generate_prelim_emails(cfg)
     else:
         raise NotImplementedError(
             f"\n\nYou passed in '{args.generate}' to the --generate argument."
