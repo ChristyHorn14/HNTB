@@ -34,5 +34,4 @@ def read_config(config_path: str):
         facesheet_template_filename=config_dict["facesheet_template_filename"],
         ppt_template_filename=config_dict["ppt_template_filename"],
     )
-    check_config(cfg)
     return cfg
