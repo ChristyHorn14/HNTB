@@ -97,7 +97,7 @@ The following examples use the config yaml file
 to pull data from the HNTB OneDrive. See `./config/courtney.yaml` or
 `./config/courtney.yaml` for examples.
 
-### Generate Run Face Sheets
+### Generate Face Sheets
 - Activate the virtual environment (venv) as above, then run:
 Test
 ```
@@ -121,6 +121,18 @@ Real
 python hntb_gen.py --config ./config/YourConfig.yaml --generate ppt
 ````
 - This file with save to the Outputs folder in your HNTB folder
+
+### Generate Emails
+- Activate the virtual environment (venv), then run:
+Test
+```
+python hntb_gen.py --config ./tests/artifacts/test_config.yaml --generate emails
+```
+Real
+```
+python hntb_gen.py --config ./config/YourConfig.yaml --generate emails
+````
+- These files will save to the Outputs folder in your HNTB folder
 
 # VSCode helpful actions:
 - `command + /`: will turn code into comments
