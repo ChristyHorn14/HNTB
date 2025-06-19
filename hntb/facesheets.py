@@ -48,7 +48,7 @@ def add_header(document: Document, header_image_path: Path):
     header = section.header
     paragraph = header.paragraphs[0]
     run = paragraph.add_run()
-    run.add_picture(str(header_image_path), width=Inches(6))  # Adjust the width as needed
+    run.add_picture(str(header_image_path), width=Inches(7))  # Adjust the width as needed
 
 
 # Function to create a new document with patient data
